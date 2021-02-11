@@ -6,20 +6,20 @@
 # Например, факториал четырёх 4! = 1 * 2 * 3 * 4 = 24.
 
 from math import factorial
+from sys import exit
 
 
 def fact(num):
-    if not isinstance(num, int) or num < 1:
-        return None
+    if not isinstance(num, int) or (num < 1):
+        exit()
 
     for i in range(1, num+1):
         yield factorial(i)
 
 
 try:
-    num = int(input('Введите целое число: '))
+    num = int(input('Введите целое положительное число: '))
     print(
         f'Список факториалов для чисел от 1 до {num}: {[el for el in fact(num)]}')
 except:
     print('Ошибка ввода!')
-    exit()
