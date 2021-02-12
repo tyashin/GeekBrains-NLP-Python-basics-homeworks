@@ -4,7 +4,5 @@
 # Результат: [12, 44, 4, 10, 78, 123].
 
 list_1 = [300, 2, 12, 44, 1, 1, 4, 10, 7, 1, 78, 123, 55]
-list_2 = [el for idx, el in enumerate(
-    list_1) if (idx > 0 and (el > list_1[idx-1]))]
-
-print(list_2)
+print(list((el for idx, el in enumerate(
+    list_1) if idx > 0 and el > list_1[idx-1])))
