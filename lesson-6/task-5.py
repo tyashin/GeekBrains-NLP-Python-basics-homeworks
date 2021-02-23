@@ -19,7 +19,6 @@ class Pen (Stationery):
 
     def draw(self):
 
-        # Нарушаем DRY principle, т.к. это требуется по условию.
         print(f'Объект для рисования: {self.title}')
 
 
