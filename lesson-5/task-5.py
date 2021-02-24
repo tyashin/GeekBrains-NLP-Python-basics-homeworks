@@ -18,7 +18,7 @@ except:
 try:
     with open("task-5.txt") as txtfile:
 
-        result = reduce(lambda a, b: int(a) + int(b),
+        result = reduce(lambda a, b: a + b,
                         [int(el) for el in [line.split(" ") for line in txtfile][0] if el])
         print(f'Сумма чисел в файле: {result}.')
 
