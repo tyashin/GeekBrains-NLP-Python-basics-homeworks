@@ -45,6 +45,7 @@ class Matrix:
 
 matrix = Matrix([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [
     13, 14, 15, 16], [17, 18, 19, 20]])
+
 print(f'Первая матрица: ' + '\n' + str(matrix))
 
 second_matrix = Matrix([[1, 2, 3, 4], [1, 2, 3, 4], [
@@ -52,3 +53,4 @@ second_matrix = Matrix([[1, 2, 3, 4], [1, 2, 3, 4], [
 print(f'Вторая матрица: ' + '\n' + str(second_matrix))
 
 print(f'Результирующая матрица: ' + '\n' + str(matrix + second_matrix))
+
